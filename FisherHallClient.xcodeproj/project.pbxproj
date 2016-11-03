@@ -17,6 +17,7 @@
 		8CF605C31DCBCE4A00BC2E50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BF1DCBCE4A00BC2E50 /* Result.framework */; };
 		8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
 		8CF605C51DCBCE4A00BC2E50 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */; };
+		8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8CF605BF1DCBCE4A00BC2E50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		8CF605C01DCBCE4A00BC2E50 /* Spine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spine.framework; path = Carthage/Build/iOS/Spine.framework; sourceTree = "<group>"; };
 		8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupResource.swift; path = Resources/GroupResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,10 @@
 				8CF6059B1DCBCBF500BC2E50 /* Products */,
 				8CF605BD1DCBCE4A00BC2E50 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 1;
 		};
 		8CF6059B1DCBCBF500BC2E50 /* Products */ = {
 			isa = PBXGroup;
@@ -90,6 +95,7 @@
 		8CF6059C1DCBCBF500BC2E50 /* FisherHallClient */ = {
 			isa = PBXGroup;
 			children = (
+				8CF605C71DCBD7AD00BC2E50 /* Resources */,
 				8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */,
 				8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */,
 				8CF605A11DCBCBF500BC2E50 /* Main.storyboard */,
@@ -118,6 +124,14 @@
 				8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF605C71DCBD7AD00BC2E50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */,
+				8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
