@@ -1,1 +1,3 @@
 github "wvteijlingen/Spine" "master"
+github "Quick/Quick"
+github "Quick/Nimble"
