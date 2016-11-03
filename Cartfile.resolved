@@ -1,0 +1,4 @@
+github "antitypical/Result" "3.0.0"
+github "SwiftyJSON/SwiftyJSON" "v3.1.1"
+github "Thomvis/BrightFutures" "v5.1.0"
+github "wvteijlingen/Spine" "9f78b89701612aaabf56348e30a76eca3eb5d6fc"
