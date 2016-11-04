@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5D87261DCC2B9300DAB8D3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87251DCC2B9300DAB8D3 /* Group.swift */; };
+		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
+		8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
 		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
 		8CF605A31DCBCBF500BC2E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A11DCBCBF500BC2E50 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C5D87251DCC2B9300DAB8D3 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Endpoints/Group.swift; sourceTree = "<group>"; };
+		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
+		8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupSpec.swift; path = Endpoints/GroupSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHallClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +129,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C5D87241DCC2B4800DAB8D3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D87251DCC2B9300DAB8D3 /* Group.swift */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		8C5D87291DCC3A3800DAB8D3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
 		8CF605911DCBCBF500BC2E50 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,7 @@
 		8CF6059C1DCBCBF500BC2E50 /* FisherHallClient */ = {
 			isa = PBXGroup;
 			children = (
+				8C5D87241DCC2B4800DAB8D3 /* Endpoints */,
 				8CF605C71DCBD7AD00BC2E50 /* Resources */,
 				8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */,
 				8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */,
@@ -155,6 +178,7 @@
 				8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */,
 				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
+				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
 			);
 			path = FisherHallClient;
 			sourceTree = "<group>";
@@ -162,6 +186,7 @@
 		8CF605B11DCBCBF500BC2E50 /* FisherHallClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				8C5D87291DCC3A3800DAB8D3 /* Endpoints */,
 				8CF605CA1DCBE4C700BC2E50 /* Resources */,
 				8CF605B21DCBCBF500BC2E50 /* FisherHallClientTests.swift */,
 				8CF605B41DCBCBF500BC2E50 /* Info.plist */,
@@ -341,8 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */,
+				8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */,
 				8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
+				8C5D87261DCC2B9300DAB8D3 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +379,7 @@
 			files = (
 				8CF605B31DCBCBF500BC2E50 /* FisherHallClientTests.swift in Sources */,
 				8CF605CE1DCBE61D00BC2E50 /* GroupResourceSpec.swift in Sources */,
+				8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

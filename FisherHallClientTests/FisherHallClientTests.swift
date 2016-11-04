@@ -10,6 +10,7 @@ import XCTest
 @testable import FisherHallClient
 
 class FisherHallClientTests: XCTestCase {
+	
     
     override func setUp() {
         super.setUp()
