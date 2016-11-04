@@ -11,6 +11,7 @@ class GroupResource: Resource {
 	var slug: String?
 	var targetAudience: String?
 	var createdAt: NSDate?
+	var createdAtIso8601: String?
 
 	override class var resourceType: ResourceType {
 		return "groups"
@@ -19,14 +20,14 @@ class GroupResource: Resource {
 	override class var fields: [Field] {
 		return fieldsFromDictionary([
 			"about": Attribute(),
-			"bannerUrl": URLAttribute().serializeAs("banner-url"),
-			"meetDetails": Attribute().serializeAs("meet-details"),
+			"bannerUrl": URLAttribute(),
+			"meetDetails": Attribute(),
 			"name": Attribute(),
-			"profilePictureUrl": URLAttribute().serializeAs("profile-picture-url"),
-			"shortDescription": Attribute().serializeAs("short-description"),
+			"profilePictureUrl": URLAttribute(),
+			"shortDescription": Attribute(),
 			"slug": Attribute(),
-			"targetAudience": Attribute().serializeAs("target-audience"),
-			"createdAt": DateAttribute().serializeAs("created-at")
+			"targetAudience": Attribute(),
+			"createdAt": DateAttribute(format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
 		])
 	}
 }

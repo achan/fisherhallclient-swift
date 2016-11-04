@@ -10,6 +10,10 @@
 		8C5D87261DCC2B9300DAB8D3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87251DCC2B9300DAB8D3 /* Group.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
 		8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */; };
+		8C5D872D1DCCD35E00DAB8D3 /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; };
+		8C5D872E1DCCD3A500DAB8D3 /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; };
+		8C5D872F1DCCD3E500DAB8D3 /* DVR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C5D87341DCCD57C00DAB8D3 /* group.findById.machingId.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
 		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
 		8CF605A31DCBCBF500BC2E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A11DCBCBF500BC2E50 /* Main.storyboard */; };
@@ -19,7 +23,6 @@
 		8CF605C21DCBCE4A00BC2E50 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8CF605C31DCBCE4A00BC2E50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BF1DCBCE4A00BC2E50 /* Result.framework */; };
 		8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
-		8CF605C51DCBCE4A00BC2E50 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */; };
 		8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */; };
 		8CF605CE1DCBE61D00BC2E50 /* GroupResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605CD1DCBE61D00BC2E50 /* GroupResourceSpec.swift */; };
 		8CF605D11DCBEAD700BC2E50 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
@@ -32,11 +35,9 @@
 		8CF605DD1DCBFB5300BC2E50 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CF605DE1DCBFB5300BC2E50 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
 		8CF605DF1DCBFB5300BC2E50 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8CF605E01DCBFB5300BC2E50 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8CF605E11DCBFB5300BC2E50 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CF605E21DCBFB5300BC2E50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BF1DCBCE4A00BC2E50 /* Result.framework */; };
 		8CF605E31DCBFB5300BC2E50 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BF1DCBCE4A00BC2E50 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8CF605E41DCBFB5300BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
 		8CF605E51DCBFB5300BC2E50 /* Spine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CF605E61DCBFB5300BC2E50 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */; };
 		8CF605E71DCBFB5300BC2E50 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -59,6 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8C5D872F1DCCD3E500DAB8D3 /* DVR.framework in Embed Frameworks */,
 				8CF605E11DCBFB5300BC2E50 /* BrightFutures.framework in Embed Frameworks */,
 				8CF605DD1DCBFB5300BC2E50 /* Quick.framework in Embed Frameworks */,
 				8CF605E71DCBFB5300BC2E50 /* SwiftyJSON.framework in Embed Frameworks */,
@@ -75,6 +77,8 @@
 		8C5D87251DCC2B9300DAB8D3 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Endpoints/Group.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupSpec.swift; path = Endpoints/GroupSpec.swift; sourceTree = "<group>"; };
+		8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
+		8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = group.findById.machingId.json; path = Fixtures/DVR/group.findById.machingId.json; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHallClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5D872E1DCCD3A500DAB8D3 /* DVR.framework in Frameworks */,
 				8CF605C21DCBCE4A00BC2E50 /* BrightFutures.framework in Frameworks */,
 				8CF605C31DCBCE4A00BC2E50 /* Result.framework in Frameworks */,
 				8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */,
@@ -107,9 +112,6 @@
 				8CF605E61DCBFB5300BC2E50 /* SwiftyJSON.framework in Frameworks */,
 				8CF605DE1DCBFB5300BC2E50 /* Nimble.framework in Frameworks */,
 				8CF605DC1DCBFB5300BC2E50 /* Quick.framework in Frameworks */,
-				8CF605E01DCBFB5300BC2E50 /* BrightFutures.framework in Frameworks */,
-				8CF605E41DCBFB5300BC2E50 /* Spine.framework in Frameworks */,
-				8CF605C51DCBCE4A00BC2E50 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5D872D1DCCD35E00DAB8D3 /* DVR.framework in Frameworks */,
 				8CF605D81DCBFAD900BC2E50 /* Spine.framework in Frameworks */,
 				8CF605D91DCBFAD900BC2E50 /* SwiftyJSON.framework in Frameworks */,
 				8CF605DA1DCBFAD900BC2E50 /* BrightFutures.framework in Frameworks */,
@@ -143,6 +146,22 @@
 				8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */,
 			);
 			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		8C5D87311DCCD56200DAB8D3 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D87321DCCD57100DAB8D3 /* DVR */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		8C5D87321DCCD57100DAB8D3 /* DVR */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */,
+			);
+			name = DVR;
 			sourceTree = "<group>";
 		};
 		8CF605911DCBCBF500BC2E50 = {
@@ -186,6 +205,7 @@
 		8CF605B11DCBCBF500BC2E50 /* FisherHallClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				8C5D87311DCCD56200DAB8D3 /* Fixtures */,
 				8C5D87291DCC3A3800DAB8D3 /* Endpoints */,
 				8CF605CA1DCBE4C700BC2E50 /* Resources */,
 				8CF605B21DCBCBF500BC2E50 /* FisherHallClientTests.swift */,
@@ -197,6 +217,7 @@
 		8CF605BD1DCBCE4A00BC2E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */,
 				8CF605CF1DCBEAD700BC2E50 /* Quick.framework */,
 				8CF605D01DCBEAD700BC2E50 /* Nimble.framework */,
 				8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */,
@@ -321,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5D87341DCCD57C00DAB8D3 /* group.findById.machingId.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

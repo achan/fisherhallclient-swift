@@ -17,8 +17,16 @@ class FisherHallClient {
 		return _spine;
 	}
 
-	init() {
-		_spine = Spine(baseURL: baseURL)
+	public convenience init() {
+		self.init(withNetworkClient: HTTPClient())
+	}
+
+	public convenience init(withSession session: URLSession) {
+		self.init(withNetworkClient: HTTPClient(session: session))
+	}
+
+	private init(withNetworkClient networkClient: NetworkClient) {
+		_spine = Spine(baseURL: baseURL, networkClient: networkClient)
 		_spine.registerResource(GroupResource.self)
 	}
 }
