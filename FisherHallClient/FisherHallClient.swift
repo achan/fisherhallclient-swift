@@ -1,11 +1,3 @@
-//
-//  FisherHallClient.swift
-//  FisherHallClient
-//
-//  Created by Amos Chan on 2016-11-03.
-//  Copyright © 2016 Amos Chan. All rights reserved.
-//
-
 import Foundation
 import Spine
 
@@ -28,5 +20,6 @@ class FisherHallClient {
 	private init(withNetworkClient networkClient: NetworkClient) {
 		_spine = Spine(baseURL: baseURL, networkClient: networkClient)
 		_spine.registerResource(GroupResource.self)
+		_spine.registerResource(BulletinResource.self)
 	}
 }

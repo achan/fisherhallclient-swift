@@ -13,13 +13,15 @@
 		8C5D872D1DCCD35E00DAB8D3 /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; };
 		8C5D872E1DCCD3A500DAB8D3 /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; };
 		8C5D872F1DCCD3E500DAB8D3 /* DVR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8C5D87341DCCD57C00DAB8D3 /* group.findById.machingId.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */; };
+		8C5D87391DD00FD100DAB8D3 /* BulletinResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */; };
+		8C5D873D1DD0212B00DAB8D3 /* Bulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */; };
+		8CD1941C1DD0C76500AFEDE2 /* BulletinSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
 		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
 		8CF605A31DCBCBF500BC2E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A11DCBCBF500BC2E50 /* Main.storyboard */; };
 		8CF605A51DCBCBF500BC2E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */; };
 		8CF605A81DCBCBF500BC2E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */; };
-		8CF605B31DCBCBF500BC2E50 /* FisherHallClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605B21DCBCBF500BC2E50 /* FisherHallClientTests.swift */; };
+		8CF605B31DCBCBF500BC2E50 /* FisherHallClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */; };
 		8CF605C21DCBCE4A00BC2E50 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8CF605C31DCBCE4A00BC2E50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BF1DCBCE4A00BC2E50 /* Result.framework */; };
 		8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
@@ -78,7 +80,9 @@
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupSpec.swift; path = Endpoints/GroupSpec.swift; sourceTree = "<group>"; };
 		8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
-		8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = group.findById.machingId.json; path = Fixtures/DVR/group.findById.machingId.json; sourceTree = "<group>"; };
+		8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinResource.swift; path = Resources/BulletinResource.swift; sourceTree = "<group>"; };
+		8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bulletin.swift; path = Endpoints/Bulletin.swift; sourceTree = "<group>"; };
+		8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinSpec.swift; path = Endpoints/BulletinSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHallClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +91,7 @@
 		8CF605A71DCBCBF500BC2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF605A91DCBCBF500BC2E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF605AE1DCBCBF500BC2E50 /* FisherHallClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisherHallClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CF605B21DCBCBF500BC2E50 /* FisherHallClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisherHallClientTests.swift; sourceTree = "<group>"; };
+		8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisherHallClientSpec.swift; sourceTree = "<group>"; };
 		8CF605B41DCBCBF500BC2E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		8CF605BF1DCBCE4A00BC2E50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5D87251DCC2B9300DAB8D3 /* Group.swift */,
+				8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */,
 			);
 			name = Endpoints;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		8C5D87291DCC3A3800DAB8D3 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */,
 				8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */,
 			);
 			name = Endpoints;
@@ -159,7 +165,6 @@
 		8C5D87321DCCD57100DAB8D3 /* DVR */ = {
 			isa = PBXGroup;
 			children = (
-				8C5D87331DCCD57C00DAB8D3 /* group.findById.machingId.json */,
 			);
 			name = DVR;
 			sourceTree = "<group>";
@@ -208,7 +213,7 @@
 				8C5D87311DCCD56200DAB8D3 /* Fixtures */,
 				8C5D87291DCC3A3800DAB8D3 /* Endpoints */,
 				8CF605CA1DCBE4C700BC2E50 /* Resources */,
-				8CF605B21DCBCBF500BC2E50 /* FisherHallClientTests.swift */,
+				8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */,
 				8CF605B41DCBCBF500BC2E50 /* Info.plist */,
 			);
 			path = FisherHallClientTests;
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */,
+				8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -342,7 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5D87341DCCD57C00DAB8D3 /* group.findById.machingId.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,9 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5D87391DD00FD100DAB8D3 /* BulletinResource.swift in Sources */,
 				8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */,
 				8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */,
 				8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */,
+				8C5D873D1DD0212B00DAB8D3 /* Bulletin.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
 				8C5D87261DCC2B9300DAB8D3 /* Group.swift in Sources */,
 			);
@@ -399,9 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF605B31DCBCBF500BC2E50 /* FisherHallClientTests.swift in Sources */,
+				8CF605B31DCBCBF500BC2E50 /* FisherHallClientSpec.swift in Sources */,
 				8CF605CE1DCBE61D00BC2E50 /* GroupResourceSpec.swift in Sources */,
 				8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */,
+				8CD1941C1DD0C76500AFEDE2 /* BulletinSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

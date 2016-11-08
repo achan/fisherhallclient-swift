@@ -2,7 +2,6 @@ import Foundation
 import Quick
 import Nimble
 import Spine
-import DVR
 
 @testable import FisherHallClient
 
@@ -10,14 +9,7 @@ class GroupSpec: QuickSpec {
 	override func spec() {
 		describe("findById") {
 			it("returns the group with the matching id") {
-				let session = Session(cassetteName: "group.findById.machingId")
-				let client = FisherHallClient(withSession: session)
-				let endpoint = Group(withClient: client)
-
-				let endpointRequest =
-					URLRequest(url: URL(string: "https://mcac.church/api/v1/groups/1")!)
-
-				session.dataTask(with: endpointRequest).resume()
+				let endpoint = Group(withClient: FisherHallClient())
 
 				waitUntil(timeout: 10) { done in
 					endpoint
