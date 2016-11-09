@@ -6,6 +6,7 @@ class BulletinResource: Resource {
 	var serviceOrder: String?
 	var bannerUrl: NSURL?
 	var publishedAt: NSDate?
+	var announcements: LinkedResourceCollection?
 
 	override class var resourceType: ResourceType {
 		return "bulletins"
@@ -16,7 +17,8 @@ class BulletinResource: Resource {
 			"name": Attribute(),
 			"serviceOrder": Attribute(),
 			"bannerUrl": URLAttribute(),
-			"publishedAt": DateAttribute(format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
-			])
+			"publishedAt": DateAttribute(format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ"),
+			"announcements": ToManyRelationship(AnnouncementResource.self)
+		])
 	}
 }

@@ -4,8 +4,7 @@ import BrightFutures
 
 class Bulletin {
 	private static let baseUrl = "https://mcac.church/api/v1/bulletins"
-
-	let client: FisherHallClient
+	private let client: FisherHallClient
 
 	init(withClient client: FisherHallClient) {
 		self.client = client
@@ -16,9 +15,11 @@ class Bulletin {
 		return client.spine.findOne(String(id), ofType: BulletinResource.self)
 	}
 
-	public func getLatestBulletin() -> Future<(resource: BulletinResource, meta: Metadata?, jsonapi: JSONAPIData?), SpineError> {
-		let query =
+	public func getLatestBulletin()
+		-> Future<(resource: BulletinResource, meta: Metadata?, jsonapi: JSONAPIData?), SpineError> {
+		var query =
 			Query(resourceType: BulletinResource.self, path: "https://mcac.church/api/v1/sunday")
+		query.include("announcements")
 		return client.spine.findOne(query)
 	}
 }
