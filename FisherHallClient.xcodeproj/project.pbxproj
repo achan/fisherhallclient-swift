@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementSpec.swift */; };
+		8C5D6E511DD2DA4E0000DEE7 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D6E501DD2DA4E0000DEE7 /* Announcement.swift */; };
 		8C5D87261DCC2B9300DAB8D3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87251DCC2B9300DAB8D3 /* Group.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
 		8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */; };
@@ -15,6 +17,7 @@
 		8C5D872F1DCCD3E500DAB8D3 /* DVR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C5D87391DD00FD100DAB8D3 /* BulletinResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */; };
 		8C5D873D1DD0212B00DAB8D3 /* Bulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */; };
+		8C9DB62B1DD2CC6500BB0920 /* AnnouncementResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */; };
 		8CD1941C1DD0C76500AFEDE2 /* BulletinSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
 		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
@@ -76,12 +79,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementSpec.swift; path = Endpoints/AnnouncementSpec.swift; sourceTree = "<group>"; };
+		8C5D6E501DD2DA4E0000DEE7 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = Endpoints/Announcement.swift; sourceTree = "<group>"; };
 		8C5D87251DCC2B9300DAB8D3 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Endpoints/Group.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupSpec.swift; path = Endpoints/GroupSpec.swift; sourceTree = "<group>"; };
 		8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
 		8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinResource.swift; path = Resources/BulletinResource.swift; sourceTree = "<group>"; };
 		8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bulletin.swift; path = Endpoints/Bulletin.swift; sourceTree = "<group>"; };
+		8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementResource.swift; path = Resources/AnnouncementResource.swift; sourceTree = "<group>"; };
 		8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinSpec.swift; path = Endpoints/BulletinSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHallClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			children = (
 				8C5D87251DCC2B9300DAB8D3 /* Group.swift */,
 				8C5D873C1DD0212B00DAB8D3 /* Bulletin.swift */,
+				8C5D6E501DD2DA4E0000DEE7 /* Announcement.swift */,
 			);
 			name = Endpoints;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 			children = (
 				8CD1941B1DD0C76500AFEDE2 /* BulletinSpec.swift */,
 				8C5D872A1DCC3A5A00DAB8D3 /* GroupSpec.swift */,
+				8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementSpec.swift */,
 			);
 			name = Endpoints;
 			sourceTree = "<group>";
@@ -236,8 +244,9 @@
 		8CF605C71DCBD7AD00BC2E50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */,
+				8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */,
 				8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */,
+				8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -392,8 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9DB62B1DD2CC6500BB0920 /* AnnouncementResource.swift in Sources */,
 				8C5D87391DD00FD100DAB8D3 /* BulletinResource.swift in Sources */,
 				8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */,
+				8C5D6E511DD2DA4E0000DEE7 /* Announcement.swift in Sources */,
 				8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */,
 				8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */,
 				8C5D873D1DD0212B00DAB8D3 /* Bulletin.swift in Sources */,
@@ -408,6 +419,7 @@
 			files = (
 				8CF605B31DCBCBF500BC2E50 /* FisherHallClientSpec.swift in Sources */,
 				8CF605CE1DCBE61D00BC2E50 /* GroupResourceSpec.swift in Sources */,
+				8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementSpec.swift in Sources */,
 				8C5D872B1DCC3A5A00DAB8D3 /* GroupSpec.swift in Sources */,
 				8CD1941C1DD0C76500AFEDE2 /* BulletinSpec.swift in Sources */,
 			);

@@ -21,5 +21,6 @@ class FisherHallClient {
 		_spine = Spine(baseURL: baseURL, networkClient: networkClient)
 		_spine.registerResource(GroupResource.self)
 		_spine.registerResource(BulletinResource.self)
+		_spine.registerResource(AnnouncementResource.self)
 	}
 }
