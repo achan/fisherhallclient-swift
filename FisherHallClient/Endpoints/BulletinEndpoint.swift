@@ -2,7 +2,7 @@ import Foundation
 import Spine
 import BrightFutures
 
-class Bulletin {
+class BulletinEndpoint {
 	private static let baseUrl = "https://mcac.church/api/v1/bulletins"
 	private let client: FisherHallClient
 

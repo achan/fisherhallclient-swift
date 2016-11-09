@@ -5,11 +5,11 @@ import Spine
 
 @testable import FisherHallClient
 
-class BulletinSpec: QuickSpec {
+class BulletinEndpointSpec: QuickSpec {
 	override func spec() {
 		describe("findById") {
 			it("returns the bulletin with the matching id") {
-				let endpoint = Bulletin(withClient: FisherHallClient())
+				let endpoint = BulletinEndpoint(withClient: FisherHallClient())
 
 				waitUntil(timeout: 10) { done in
 					endpoint
@@ -29,7 +29,7 @@ class BulletinSpec: QuickSpec {
 
 		describe("latestBulletin") {
 			it("returns the latest bulletin") {
-				let endpoint = Bulletin(withClient: FisherHallClient())
+				let endpoint = BulletinEndpoint(withClient: FisherHallClient())
 
 				waitUntil(timeout: 10) { done in
 					endpoint

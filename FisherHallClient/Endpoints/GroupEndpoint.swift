@@ -2,7 +2,7 @@ import Foundation
 import Spine
 import BrightFutures
 
-class Group {
+class GroupEndpoint {
 	private static let baseUrl = "https://mcac.church/api/v1/groups"
 	private let client: FisherHallClient
 	

@@ -5,11 +5,11 @@ import Spine
 
 @testable import FisherHallClient
 
-class GroupSpec: QuickSpec {
+class GroupEndpointSpec: QuickSpec {
 	override func spec() {
 		describe("findById") {
 			it("returns the group with the matching id") {
-				let endpoint = Group(withClient: FisherHallClient())
+				let endpoint = GroupEndpoint(withClient: FisherHallClient())
 
 				waitUntil(timeout: 10) { done in
 					endpoint

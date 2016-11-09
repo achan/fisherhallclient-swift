@@ -5,11 +5,11 @@ import Spine
 
 @testable import FisherHallClient
 
-class AnnouncementSpec: QuickSpec {
+class AnnouncementEndpointSpec: QuickSpec {
 	override func spec() {
 		describe("findById") {
 			it("returns the announcement with the matching id") {
-				let endpoint = Announcement(withClient: FisherHallClient())
+				let endpoint = AnnouncementEndpoint(withClient: FisherHallClient())
 
 				waitUntil(timeout: 10) { done in
 					endpoint
