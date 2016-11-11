@@ -1,0 +1,10 @@
+language: swift
+osx_image: xcode8
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+before_script:
+  - carthage build --platform iOS
+script:
+  - xcodebuild -project FisherHallClient.xcodeproj -scheme FisherHallClientTests build-for-testing
+  - xctool -project FisherHallClient.xcodeproj -scheme FisherHallClientTests run-tests
