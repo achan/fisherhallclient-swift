@@ -1,10 +1,9 @@
-language: swift
+language: objective-c
 osx_image: xcode8
-before_install:
-  - brew update
-  - brew outdated xctool || brew upgrade xctool
+env:
+  - PLATFORM="ios" SCHEME="FisherHallClientTests" DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.0"
 before_script:
-  - carthage build --platform iOS
+  - carthage bootstrap --platform $PLATFORM --no-use-binaries
+  -  xcodebuild -project FisherHallClient.xcodeproj -list
 script:
-  - xcodebuild -project FisherHallClient.xcodeproj -scheme FisherHallClientTests build-for-testing
-  - xctool -project FisherHallClient.xcodeproj -scheme FisherHallClientTests run-tests
+  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" build test

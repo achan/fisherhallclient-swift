@@ -13,10 +13,11 @@
 		8C5D87261DCC2B9300DAB8D3 /* GroupEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87251DCC2B9300DAB8D3 /* GroupEndpoint.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
 		8C5D872B1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */; };
-		8C5D872D1DCCD35E00DAB8D3 /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */; };
 		8C5D87391DD00FD100DAB8D3 /* BulletinResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */; };
 		8C5D873D1DD0212B00DAB8D3 /* BulletinEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D873C1DD0212B00DAB8D3 /* BulletinEndpoint.swift */; };
 		8C9DB62B1DD2CC6500BB0920 /* AnnouncementResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */; };
+		8CCFF42D1DD6621A001663BF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
+		8CCFF42E1DD6621A001663BF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
 		8CD1941C1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
 		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
@@ -27,8 +28,6 @@
 		8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
 		8CF605C91DCBD81C00BC2E50 /* GroupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605C81DCBD81C00BC2E50 /* GroupResource.swift */; };
 		8CF605CE1DCBE61D00BC2E50 /* GroupResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF605CD1DCBE61D00BC2E50 /* GroupResourceSpec.swift */; };
-		8CF605D11DCBEAD700BC2E50 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
-		8CF605D21DCBEAD700BC2E50 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
 		8CF605D81DCBFAD900BC2E50 /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C01DCBCE4A00BC2E50 /* Spine.framework */; };
 		8CF605D91DCBFAD900BC2E50 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605C11DCBCE4A00BC2E50 /* SwiftyJSON.framework */; };
 		8CF605DA1DCBFAD900BC2E50 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
@@ -74,7 +73,6 @@
 		8C5D87251DCC2B9300DAB8D3 /* GroupEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupEndpoint.swift; path = Endpoints/GroupEndpoint.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupEndpointSpec.swift; path = Endpoints/GroupEndpointSpec.swift; sourceTree = "<group>"; };
-		8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
 		8C5D87381DD00FD100DAB8D3 /* BulletinResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinResource.swift; path = Resources/BulletinResource.swift; sourceTree = "<group>"; };
 		8C5D873C1DD0212B00DAB8D3 /* BulletinEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinEndpoint.swift; path = Endpoints/BulletinEndpoint.swift; sourceTree = "<group>"; };
 		8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementResource.swift; path = Resources/AnnouncementResource.swift; sourceTree = "<group>"; };
@@ -115,13 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5D872D1DCCD35E00DAB8D3 /* DVR.framework in Frameworks */,
+				8CCFF42D1DD6621A001663BF /* Nimble.framework in Frameworks */,
+				8CCFF42E1DD6621A001663BF /* Quick.framework in Frameworks */,
 				8CF605D81DCBFAD900BC2E50 /* Spine.framework in Frameworks */,
 				8CF605D91DCBFAD900BC2E50 /* SwiftyJSON.framework in Frameworks */,
 				8CF605DA1DCBFAD900BC2E50 /* BrightFutures.framework in Frameworks */,
 				8CF605DB1DCBFAD900BC2E50 /* Result.framework in Frameworks */,
-				8CF605D11DCBEAD700BC2E50 /* Quick.framework in Frameworks */,
-				8CF605D21DCBEAD700BC2E50 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +213,6 @@
 		8CF605BD1DCBCE4A00BC2E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C5D872C1DCCD35E00DAB8D3 /* DVR.framework */,
 				8CF605CF1DCBEAD700BC2E50 /* Quick.framework */,
 				8CF605D01DCBEAD700BC2E50 /* Nimble.framework */,
 				8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */,
@@ -373,6 +369,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Spine.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputPaths = (
 			);
