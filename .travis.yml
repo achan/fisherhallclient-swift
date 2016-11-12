@@ -7,4 +7,4 @@ before_script:
   - xcodebuild -project FisherHallClient.xcodeproj -list
   - instruments -s devices
 script:
-  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk "$SDK" build test
+  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk "$SDK" -configuration Debug build test
