@@ -6,4 +6,4 @@ before_script:
   - carthage bootstrap --platform $PLATFORM --no-use-binaries
   -  xcodebuild -project FisherHallClient.xcodeproj -list
 script:
-  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" build test
+  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk iphonesimulator build test
