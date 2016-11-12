@@ -17,6 +17,8 @@
 		8C7122F21DD7CCB100074A50 /* AnnouncementResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122EF1DD7CCB100074A50 /* AnnouncementResource.swift */; };
 		8C7122F31DD7CCB100074A50 /* BulletinResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122F01DD7CCB100074A50 /* BulletinResource.swift */; };
 		8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122F11DD7CCB100074A50 /* GroupResource.swift */; };
+		8C7122FF1DD7E29100074A50 /* SermonEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */; };
+		8C7123011DD7E29800074A50 /* SermonResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123001DD7E29800074A50 /* SermonResource.swift */; };
 		8CCFF42D1DD6621A001663BF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
 		8CCFF42E1DD6621A001663BF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
 		8CD1941C1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */; };
@@ -70,12 +72,14 @@
 		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpointSpec.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEndpointSpec.swift; sourceTree = "<group>"; };
-		8C7122E91DD7CCA700074A50 /* AnnouncementEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementEndpoint.swift; path = Endpoints/AnnouncementEndpoint.swift; sourceTree = "<group>"; };
-		8C7122EA1DD7CCA700074A50 /* BulletinEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinEndpoint.swift; path = Endpoints/BulletinEndpoint.swift; sourceTree = "<group>"; };
-		8C7122EB1DD7CCA700074A50 /* GroupEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupEndpoint.swift; path = Endpoints/GroupEndpoint.swift; sourceTree = "<group>"; };
-		8C7122EF1DD7CCB100074A50 /* AnnouncementResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementResource.swift; path = Resources/AnnouncementResource.swift; sourceTree = "<group>"; };
-		8C7122F01DD7CCB100074A50 /* BulletinResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinResource.swift; path = Resources/BulletinResource.swift; sourceTree = "<group>"; };
-		8C7122F11DD7CCB100074A50 /* GroupResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupResource.swift; path = Resources/GroupResource.swift; sourceTree = "<group>"; };
+		8C7122E91DD7CCA700074A50 /* AnnouncementEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpoint.swift; sourceTree = "<group>"; };
+		8C7122EA1DD7CCA700074A50 /* BulletinEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinEndpoint.swift; sourceTree = "<group>"; };
+		8C7122EB1DD7CCA700074A50 /* GroupEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEndpoint.swift; sourceTree = "<group>"; };
+		8C7122EF1DD7CCB100074A50 /* AnnouncementResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementResource.swift; sourceTree = "<group>"; };
+		8C7122F01DD7CCB100074A50 /* BulletinResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinResource.swift; sourceTree = "<group>"; };
+		8C7122F11DD7CCB100074A50 /* GroupResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupResource.swift; sourceTree = "<group>"; };
+		8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonEndpoint.swift; sourceTree = "<group>"; };
+		8C7123001DD7E29800074A50 /* SermonResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonResource.swift; sourceTree = "<group>"; };
 		8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinEndpointSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,21 +165,23 @@
 		8C7122E71DD7CAC400074A50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C7123001DD7E29800074A50 /* SermonResource.swift */,
 				8C7122EF1DD7CCB100074A50 /* AnnouncementResource.swift */,
 				8C7122F01DD7CCB100074A50 /* BulletinResource.swift */,
 				8C7122F11DD7CCB100074A50 /* GroupResource.swift */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8C7122E81DD7CAD200074A50 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */,
 				8C7122E91DD7CCA700074A50 /* AnnouncementEndpoint.swift */,
 				8C7122EA1DD7CCA700074A50 /* BulletinEndpoint.swift */,
 				8C7122EB1DD7CCA700074A50 /* GroupEndpoint.swift */,
 			);
-			name = Endpoints;
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		8C7122F51DD7CCD100074A50 /* API */ = {
@@ -397,6 +403,8 @@
 				8C7122EC1DD7CCA700074A50 /* AnnouncementEndpoint.swift in Sources */,
 				8C7122EE1DD7CCA700074A50 /* GroupEndpoint.swift in Sources */,
 				8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */,
+				8C7122FF1DD7E29100074A50 /* SermonEndpoint.swift in Sources */,
+				8C7123011DD7E29800074A50 /* SermonResource.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
 				8C7122ED1DD7CCA700074A50 /* BulletinEndpoint.swift in Sources */,
 				8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */,

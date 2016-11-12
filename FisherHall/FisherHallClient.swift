@@ -22,5 +22,6 @@ class FisherHallClient {
 		_spine.registerResource(GroupResource.self)
 		_spine.registerResource(BulletinResource.self)
 		_spine.registerResource(AnnouncementResource.self)
+		_spine.registerResource(SermonResource.self)
 	}
 }
