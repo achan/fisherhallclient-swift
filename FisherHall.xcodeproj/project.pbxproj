@@ -165,10 +165,10 @@
 		8C7122E71DD7CAC400074A50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8C7123001DD7E29800074A50 /* SermonResource.swift */,
 				8C7122EF1DD7CCB100074A50 /* AnnouncementResource.swift */,
 				8C7122F01DD7CCB100074A50 /* BulletinResource.swift */,
 				8C7122F11DD7CCB100074A50 /* GroupResource.swift */,
+				8C7123001DD7E29800074A50 /* SermonResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,10 +176,10 @@
 		8C7122E81DD7CAD200074A50 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */,
 				8C7122E91DD7CCA700074A50 /* AnnouncementEndpoint.swift */,
 				8C7122EA1DD7CCA700074A50 /* BulletinEndpoint.swift */,
 				8C7122EB1DD7CCA700074A50 /* GroupEndpoint.swift */,
+				8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -220,12 +220,12 @@
 			children = (
 				8C7122E61DD7CAB100074A50 /* API */,
 				8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */,
-				8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */,
-				8CF605A11DCBCBF500BC2E50 /* Main.storyboard */,
 				8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */,
-				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
-				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
+				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
+				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
+				8CF605A11DCBCBF500BC2E50 /* Main.storyboard */,
+				8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */,
 			);
 			path = FisherHall;
 			sourceTree = "<group>";
