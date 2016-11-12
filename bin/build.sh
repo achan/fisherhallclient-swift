@@ -1,2 +1,2 @@
 #!/bin/bash
-xcodebuild -project FisherHallClient.xcodeproj -scheme FisherHallClientTests build-for-testing
+xcodebuild -project FisherHall.xcodeproj -scheme FisherHallTests build-for-testing
