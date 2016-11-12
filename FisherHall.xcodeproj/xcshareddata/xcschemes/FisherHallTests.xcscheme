@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF605991DCBCBF500BC2E50"
-               BuildableName = "FisherHallClient.app"
-               BlueprintName = "FisherHallClient"
-               ReferencedContainer = "container:FisherHallClient.xcodeproj">
+               BuildableName = "FisherHall.app"
+               BlueprintName = "FisherHall"
+               ReferencedContainer = "container:FisherHall.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF605AD1DCBCBF500BC2E50"
-               BuildableName = "FisherHallClientTests.xctest"
-               BlueprintName = "FisherHallClientTests"
-               ReferencedContainer = "container:FisherHallClient.xcodeproj">
+               BuildableName = "FisherHallTests.xctest"
+               BlueprintName = "FisherHallTests"
+               ReferencedContainer = "container:FisherHall.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CF605991DCBCBF500BC2E50"
-            BuildableName = "FisherHallClient.app"
-            BlueprintName = "FisherHallClient"
-            ReferencedContainer = "container:FisherHallClient.xcodeproj">
+            BuildableName = "FisherHall.app"
+            BlueprintName = "FisherHall"
+            ReferencedContainer = "container:FisherHall.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CF605991DCBCBF500BC2E50"
-            BuildableName = "FisherHallClient.app"
-            BlueprintName = "FisherHallClient"
-            ReferencedContainer = "container:FisherHallClient.xcodeproj">
+            BuildableName = "FisherHall.app"
+            BlueprintName = "FisherHall"
+            ReferencedContainer = "container:FisherHall.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

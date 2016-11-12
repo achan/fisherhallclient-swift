@@ -3,7 +3,7 @@ import Quick
 import Nimble
 import Spine
 
-@testable import FisherHallClient
+@testable import FisherHall
 
 class GroupEndpointSpec: QuickSpec {
 	override func spec() {
