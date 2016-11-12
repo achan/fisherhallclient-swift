@@ -35,18 +35,9 @@ class BulletinEndpointSpec: QuickSpec {
 					endpoint
 						.getLatestBulletin()
 						.onSuccess(callback: { (resource: BulletinResource, _, _) in
-							expect(resource.id).to(equal("48"))
-							expect(resource.name).to(equal("Holy Communion Sunday Worship Service"))
-							expect(resource.serviceOrder).to(equal(" - ## Call to Worship\n - ## Praise & Worship\n - ## [Announcements](#announcements)\n - ## Offering\n - ## Holy Communion\n - ## Sermon\n   The Art of Shepherding  \n   Acts 11:22-26  \n   Rev. Thomas Chan\n - ## Doxology\n - ## Benediction"))
-							expect(resource.bannerUrl).to(beNil())
-							expect(resource.publishedAt?.timeIntervalSince1970).to(equal(1478442600))
-
-							expect(resource.announcements?.resources.map { Int($0.id!) })
-								.to(equal([443, 442, 441, 440, 439, 436, 438, 437, 435]))
-
-							let firstAnnouncement = resource.announcements!.resources[0] as! AnnouncementResource
-							expect(firstAnnouncement.desc).to(equal("If you brought in non-perishable goods, please leave them at the back of the sanctuary."))
-							expect(firstAnnouncement.position).to(equal(9))
+							// can't have useful specs until DVR is in place, this endpoint changes weekly.
+							expect(resource.id).toNot(beNil())
+							expect(resource.announcements?.isLoaded).to(beTrue())
 
 							done()
 						})
