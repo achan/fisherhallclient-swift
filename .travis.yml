@@ -1,10 +1,10 @@
 language: objective-c
 osx_image: xcode8
 env:
-  - PLATFORM="ios" SCHEME="FisherHallClientTests" DESTINATION="platform=iOS Simulator,name=iPhone SE,OS=10.0" SDK="iphonesimulator10.0"
+  - PLATFORM="ios" SCHEME="FisherHallTests" DESTINATION="platform=iOS Simulator,name=iPhone SE,OS=10.0" SDK="iphonesimulator10.0"
 before_script:
   - carthage bootstrap --platform $PLATFORM --no-use-binaries
-  - xcodebuild -project FisherHallClient.xcodeproj -list
+  - xcodebuild -project FisherHall.xcodeproj -list
   - instruments -s devices
 script:
-  - xcodebuild -project FisherHallClient.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk "$SDK" -configuration Debug build test
+  - xcodebuild -project FisherHall.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk "$SDK" -configuration Debug build test

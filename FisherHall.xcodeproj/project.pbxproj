@@ -46,7 +46,7 @@
 			containerPortal = 8CF605921DCBCBF500BC2E50 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CF605991DCBCBF500BC2E50;
-			remoteInfo = FisherHallClient;
+			remoteInfo = FisherHall;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -77,14 +77,14 @@
 		8C5D873C1DD0212B00DAB8D3 /* BulletinEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinEndpoint.swift; path = Endpoints/BulletinEndpoint.swift; sourceTree = "<group>"; };
 		8C9DB62A1DD2CC6500BB0920 /* AnnouncementResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementResource.swift; path = Resources/AnnouncementResource.swift; sourceTree = "<group>"; };
 		8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinEndpointSpec.swift; path = Endpoints/BulletinEndpointSpec.swift; sourceTree = "<group>"; };
-		8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHallClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CF605A21DCBCBF500BC2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF605A71DCBCBF500BC2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF605A91DCBCBF500BC2E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CF605AE1DCBCBF500BC2E50 /* FisherHallClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisherHallClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF605AE1DCBCBF500BC2E50 /* FisherHallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisherHallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisherHallClientSpec.swift; sourceTree = "<group>"; };
 		8CF605B41DCBCBF500BC2E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
@@ -163,8 +163,8 @@
 		8CF605911DCBCBF500BC2E50 = {
 			isa = PBXGroup;
 			children = (
-				8CF6059C1DCBCBF500BC2E50 /* FisherHallClient */,
-				8CF605B11DCBCBF500BC2E50 /* FisherHallClientTests */,
+				8CF6059C1DCBCBF500BC2E50 /* FisherHall */,
+				8CF605B11DCBCBF500BC2E50 /* FisherHallTests */,
 				8CF6059B1DCBCBF500BC2E50 /* Products */,
 				8CF605BD1DCBCE4A00BC2E50 /* Frameworks */,
 			);
@@ -176,13 +176,13 @@
 		8CF6059B1DCBCBF500BC2E50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */,
-				8CF605AE1DCBCBF500BC2E50 /* FisherHallClientTests.xctest */,
+				8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */,
+				8CF605AE1DCBCBF500BC2E50 /* FisherHallTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8CF6059C1DCBCBF500BC2E50 /* FisherHallClient */ = {
+		8CF6059C1DCBCBF500BC2E50 /* FisherHall */ = {
 			isa = PBXGroup;
 			children = (
 				8C5D87241DCC2B4800DAB8D3 /* Endpoints */,
@@ -195,10 +195,11 @@
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
 			);
-			path = FisherHallClient;
+			name = FisherHall;
+			path = FisherHall;
 			sourceTree = "<group>";
 		};
-		8CF605B11DCBCBF500BC2E50 /* FisherHallClientTests */ = {
+		8CF605B11DCBCBF500BC2E50 /* FisherHallTests */ = {
 			isa = PBXGroup;
 			children = (
 				8C5D87311DCCD56200DAB8D3 /* Fixtures */,
@@ -207,7 +208,8 @@
 				8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */,
 				8CF605B41DCBCBF500BC2E50 /* Info.plist */,
 			);
-			path = FisherHallClientTests;
+			name = FisherHallTests;
+			path = FisherHallTests;
 			sourceTree = "<group>";
 		};
 		8CF605BD1DCBCE4A00BC2E50 /* Frameworks */ = {
@@ -244,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CF605991DCBCBF500BC2E50 /* FisherHallClient */ = {
+		8CF605991DCBCBF500BC2E50 /* FisherHall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallClient" */;
+			buildConfigurationList = 8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHall" */;
 			buildPhases = (
 				8CF605961DCBCBF500BC2E50 /* Sources */,
 				8CF605971DCBCBF500BC2E50 /* Frameworks */,
@@ -258,14 +260,14 @@
 			);
 			dependencies = (
 			);
-			name = FisherHallClient;
-			productName = FisherHallClient;
-			productReference = 8CF6059A1DCBCBF500BC2E50 /* FisherHallClient.app */;
+			name = FisherHall;
+			productName = FisherHall;
+			productReference = 8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CF605AD1DCBCBF500BC2E50 /* FisherHallClientTests */ = {
+		8CF605AD1DCBCBF500BC2E50 /* FisherHallTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CF605BA1DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallClientTests" */;
+			buildConfigurationList = 8CF605BA1DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallTests" */;
 			buildPhases = (
 				8CF605AA1DCBCBF500BC2E50 /* Sources */,
 				8CF605AB1DCBCBF500BC2E50 /* Frameworks */,
@@ -277,9 +279,9 @@
 			dependencies = (
 				8CF605B01DCBCBF500BC2E50 /* PBXTargetDependency */,
 			);
-			name = FisherHallClientTests;
-			productName = FisherHallClientTests;
-			productReference = 8CF605AE1DCBCBF500BC2E50 /* FisherHallClientTests.xctest */;
+			name = FisherHallTests;
+			productName = FisherHallTests;
+			productReference = 8CF605AE1DCBCBF500BC2E50 /* FisherHallTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CF605951DCBCBF500BC2E50 /* Build configuration list for PBXProject "FisherHallClient" */;
+			buildConfigurationList = 8CF605951DCBCBF500BC2E50 /* Build configuration list for PBXProject "FisherHall" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -318,8 +320,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CF605991DCBCBF500BC2E50 /* FisherHallClient */,
-				8CF605AD1DCBCBF500BC2E50 /* FisherHallClientTests */,
+				8CF605991DCBCBF500BC2E50 /* FisherHall */,
+				8CF605AD1DCBCBF500BC2E50 /* FisherHallTests */,
 			);
 		};
 /* End PBXProject section */
@@ -414,7 +416,7 @@
 /* Begin PBXTargetDependency section */
 		8CF605B01DCBCBF500BC2E50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CF605991DCBCBF500BC2E50 /* FisherHallClient */;
+			target = 8CF605991DCBCBF500BC2E50 /* FisherHall */;
 			targetProxy = 8CF605AF1DCBCBF500BC2E50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -542,9 +544,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FisherHallClient/Info.plist;
+				INFOPLIST_FILE = FisherHall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallClient;
+				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -560,9 +562,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FisherHallClient/Info.plist;
+				INFOPLIST_FILE = FisherHall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallClient;
+				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -578,12 +580,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FisherHallClientTests/Info.plist;
+				INFOPLIST_FILE = FisherHallTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FisherHallClient.app/FisherHallClient";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FisherHall.app/FisherHall";
 			};
 			name = Debug;
 		};
@@ -597,19 +599,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = FisherHallClientTests/Info.plist;
+				INFOPLIST_FILE = FisherHallTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = church.mcac.fisherhall.FisherHallTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FisherHallClient.app/FisherHallClient";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FisherHall.app/FisherHall";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CF605951DCBCBF500BC2E50 /* Build configuration list for PBXProject "FisherHallClient" */ = {
+		8CF605951DCBCBF500BC2E50 /* Build configuration list for PBXProject "FisherHall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF605B51DCBCBF500BC2E50 /* Debug */,
@@ -618,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallClient" */ = {
+		8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF605B81DCBCBF500BC2E50 /* Debug */,
@@ -627,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CF605BA1DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallClientTests" */ = {
+		8CF605BA1DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHallTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CF605BB1DCBCBF500BC2E50 /* Debug */,
