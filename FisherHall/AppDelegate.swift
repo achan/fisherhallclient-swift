@@ -10,11 +10,15 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
+		var coordinator: AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+			if let controller = window?.rootViewController {
+				coordinator = AppCoordinator(withNavigationController: controller)
+				coordinator?.start()
+			}
+
 			return true
     }
 
