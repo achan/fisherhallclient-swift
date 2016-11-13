@@ -19,11 +19,15 @@
 		8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122F11DD7CCB100074A50 /* GroupResource.swift */; };
 		8C7122FF1DD7E29100074A50 /* SermonEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */; };
 		8C7123011DD7E29800074A50 /* SermonResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123001DD7E29800074A50 /* SermonResource.swift */; };
+		8C7123051DD7E51400074A50 /* LatestBulletinCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123041DD7E51400074A50 /* LatestBulletinCoordinator.swift */; };
+		8C7123071DD7E80800074A50 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123061DD7E80800074A50 /* AppCoordinator.swift */; };
+		8C7123091DD7ED3400074A50 /* BulletinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */; };
+		8C71230D1DD7F39700074A50 /* BulletinViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71230C1DD7F39700074A50 /* BulletinViewModelSpec.swift */; };
 		8CCFF42D1DD6621A001663BF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
 		8CCFF42E1DD6621A001663BF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
 		8CD1941C1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */; };
 		8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */; };
-		8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */; };
+		8CF605A01DCBCBF500BC2E50 /* ShowBulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */; };
 		8CF605A31DCBCBF500BC2E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A11DCBCBF500BC2E50 /* Main.storyboard */; };
 		8CF605A51DCBCBF500BC2E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */; };
 		8CF605A81DCBCBF500BC2E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */; };
@@ -80,10 +84,14 @@
 		8C7122F11DD7CCB100074A50 /* GroupResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupResource.swift; sourceTree = "<group>"; };
 		8C7122FE1DD7E29100074A50 /* SermonEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonEndpoint.swift; sourceTree = "<group>"; };
 		8C7123001DD7E29800074A50 /* SermonResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SermonResource.swift; sourceTree = "<group>"; };
+		8C7123041DD7E51400074A50 /* LatestBulletinCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestBulletinCoordinator.swift; sourceTree = "<group>"; };
+		8C7123061DD7E80800074A50 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinViewModel.swift; sourceTree = "<group>"; };
+		8C71230C1DD7F39700074A50 /* BulletinViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinViewModelSpec.swift; path = "Features/Latest Bulletin/BulletinViewModelSpec.swift"; sourceTree = "<group>"; };
 		8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinEndpointSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShowBulletinViewController.swift; path = ../../ShowBulletinViewController.swift; sourceTree = "<group>"; };
 		8CF605A21DCBCBF500BC2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF605A71DCBCBF500BC2E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -193,6 +201,40 @@
 			name = API;
 			sourceTree = "<group>";
 		};
+		8C7123021DD7E4A600074A50 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8C7123031DD7E4C300074A50 /* Latest Bulletin */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8C7123031DD7E4C300074A50 /* Latest Bulletin */ = {
+			isa = PBXGroup;
+			children = (
+				8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */,
+				8C7123041DD7E51400074A50 /* LatestBulletinCoordinator.swift */,
+				8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */,
+			);
+			path = "Latest Bulletin";
+			sourceTree = "<group>";
+		};
+		8C71230A1DD7F36200074A50 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8C71230B1DD7F36D00074A50 /* Latest Bulletin */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		8C71230B1DD7F36D00074A50 /* Latest Bulletin */ = {
+			isa = PBXGroup;
+			children = (
+				8C71230C1DD7F39700074A50 /* BulletinViewModelSpec.swift */,
+			);
+			name = "Latest Bulletin";
+			sourceTree = "<group>";
+		};
 		8CF605911DCBCBF500BC2E50 = {
 			isa = PBXGroup;
 			children = (
@@ -219,13 +261,14 @@
 			isa = PBXGroup;
 			children = (
 				8C7122E61DD7CAB100074A50 /* API */,
+				8C7123061DD7E80800074A50 /* AppCoordinator.swift */,
 				8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */,
 				8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */,
+				8C7123021DD7E4A600074A50 /* Features */,
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
 				8CF605A11DCBCBF500BC2E50 /* Main.storyboard */,
-				8CF6059F1DCBCBF500BC2E50 /* ViewController.swift */,
 			);
 			path = FisherHall;
 			sourceTree = "<group>";
@@ -233,6 +276,7 @@
 		8CF605B11DCBCBF500BC2E50 /* FisherHallTests */ = {
 			isa = PBXGroup;
 			children = (
+				8C71230A1DD7F36200074A50 /* Features */,
 				8C7122F51DD7CCD100074A50 /* API */,
 				8CF605B21DCBCBF500BC2E50 /* FisherHallClientSpec.swift */,
 				8CF605B41DCBCBF500BC2E50 /* Info.plist */,
@@ -398,7 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7122F31DD7CCB100074A50 /* BulletinResource.swift in Sources */,
-				8CF605A01DCBCBF500BC2E50 /* ViewController.swift in Sources */,
+				8CF605A01DCBCBF500BC2E50 /* ShowBulletinViewController.swift in Sources */,
 				8C7122F21DD7CCB100074A50 /* AnnouncementResource.swift in Sources */,
 				8C7122EC1DD7CCA700074A50 /* AnnouncementEndpoint.swift in Sources */,
 				8C7122EE1DD7CCA700074A50 /* GroupEndpoint.swift in Sources */,
@@ -406,7 +450,10 @@
 				8C7122FF1DD7E29100074A50 /* SermonEndpoint.swift in Sources */,
 				8C7123011DD7E29800074A50 /* SermonResource.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
+				8C7123091DD7ED3400074A50 /* BulletinViewModel.swift in Sources */,
 				8C7122ED1DD7CCA700074A50 /* BulletinEndpoint.swift in Sources */,
+				8C7123071DD7E80800074A50 /* AppCoordinator.swift in Sources */,
+				8C7123051DD7E51400074A50 /* LatestBulletinCoordinator.swift in Sources */,
 				8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF605B31DCBCBF500BC2E50 /* FisherHallClientSpec.swift in Sources */,
+				8C71230D1DD7F39700074A50 /* BulletinViewModelSpec.swift in Sources */,
 				8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift in Sources */,
 				8C5D872B1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift in Sources */,
 				8CD1941C1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift in Sources */,
