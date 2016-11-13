@@ -6,7 +6,7 @@ import Nimble
 
 class BulletinViewModelSpec: QuickSpec {
 	override func spec() {
-		fdescribe("fromResource") {
+		describe("fromResource") {
 			context("when resource doesn't contain required fields") {
 				var subject: BulletinViewModel!
 

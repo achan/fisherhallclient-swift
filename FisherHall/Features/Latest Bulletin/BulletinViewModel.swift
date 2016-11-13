@@ -6,21 +6,11 @@ class BulletinViewModel {
 	let bannerURLString: String
 	var serviceOrder: String
 
-	convenience init(name: String, publishedAt: NSDate, bannerURL: String? = nil, serviceOrder: String? = nil) {
-		let bannerOrDefault = bannerURL ?? "https://s3.amazonaws.com/mcac/app/assets/images/theme-1920-6099a636f0f320b6d38b157909e64be6.jpg"
-		self.init(
-			name: name,
-			publishedAt: publishedAt,
-			bannerURL: bannerOrDefault,
-			serviceOrder: serviceOrder ?? ""
-		)
-	}
-
-	init(name: String, publishedAt: NSDate, bannerURL: String, serviceOrder: String) {
+	init(name: String, publishedAt: NSDate, bannerURL: String? = nil, serviceOrder: String? = nil) {
 		self.name = name
 		self.publishedAt = publishedAt
-		self.bannerURLString = bannerURL
-		self.serviceOrder = serviceOrder
+		bannerURLString = bannerURL ?? "https://s3.amazonaws.com/mcac/app/assets/images/theme-1920-6099a636f0f320b6d38b157909e64be6.jpg"
+		self.serviceOrder = serviceOrder ?? ""
 	}
 
 	public static func fromResource(resource: BulletinResource) -> BulletinViewModel? {
@@ -28,7 +18,12 @@ class BulletinViewModel {
 			return nil
 		}
 
-		return BulletinViewModel(name: name, publishedAt: publishedAt, bannerURL: resource.bannerUrl?.absoluteString, serviceOrder: resource.serviceOrder)
+		return BulletinViewModel(
+			name: name,
+			publishedAt: publishedAt,
+			bannerURL: resource.bannerUrl?.absoluteString,
+			serviceOrder: resource.serviceOrder
+		)
 	}
 
 	public func bannerURL() -> URL? {
