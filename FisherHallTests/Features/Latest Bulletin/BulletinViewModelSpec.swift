@@ -6,6 +6,21 @@ import Nimble
 
 class BulletinViewModelSpec: QuickSpec {
 	override func spec() {
+		describe("bannerURL") {
+			var subject: URL!
+
+			beforeEach {
+				let model =
+					BulletinViewModel(name: "My Bulletin", publishedAt: NSDate(), bannerURL: "https://example.com/banner.png")
+
+				subject = model.bannerURL()
+			}
+
+			it("returns a URL from the bannerURLString") {
+				expect(subject).to(equal(URL(string: "https://example.com/banner.png")))
+			}
+		}
+
 		describe("fromResource") {
 			context("when resource doesn't contain required fields") {
 				var subject: BulletinViewModel!
