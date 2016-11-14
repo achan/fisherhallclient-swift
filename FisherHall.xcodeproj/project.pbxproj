@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2A947F1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */; };
 		8C2F696A1DD3077B00795D88 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
@@ -24,7 +25,6 @@
 		8C7123091DD7ED3400074A50 /* BulletinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */; };
 		8C71230D1DD7F39700074A50 /* BulletinViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71230C1DD7F39700074A50 /* BulletinViewModelSpec.swift */; };
 		8C71230F1DD834B300074A50 /* ShowBulletinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C71230E1DD834B300074A50 /* ShowBulletinView.xib */; };
-		8C7123111DD8393800074A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7123101DD8393800074A50 /* Main.storyboard */; };
 		8C7123141DD83D5100074A50 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7123131DD83D5100074A50 /* Coordinator.swift */; };
 		8CCFF42D1DD6621A001663BF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605D01DCBEAD700BC2E50 /* Nimble.framework */; };
 		8CCFF42E1DD6621A001663BF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605CF1DCBEAD700BC2E50 /* Quick.framework */; };
@@ -75,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestBulletinCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpointSpec.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEndpointSpec.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinViewModel.swift; sourceTree = "<group>"; };
 		8C71230C1DD7F39700074A50 /* BulletinViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletinViewModelSpec.swift; path = "Features/Latest Bulletin/BulletinViewModelSpec.swift"; sourceTree = "<group>"; };
 		8C71230E1DD834B300074A50 /* ShowBulletinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowBulletinView.xib; sourceTree = "<group>"; };
-		8C7123101DD8393800074A50 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8C7123131DD83D5100074A50 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Core/Coordinator.swift; sourceTree = "<group>"; };
 		8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinEndpointSpec.swift; sourceTree = "<group>"; };
 		8CF6059A1DCBCBF500BC2E50 /* FisherHall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherHall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,8 +218,9 @@
 			children = (
 				8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */,
 				8C7123041DD7E51400074A50 /* LatestBulletinCoordinator.swift */,
-				8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */,
+				8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */,
 				8C71230E1DD834B300074A50 /* ShowBulletinView.xib */,
+				8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */,
 			);
 			path = "Latest Bulletin";
 			sourceTree = "<group>";
@@ -282,7 +283,6 @@
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
-				8C7123101DD8393800074A50 /* Main.storyboard */,
 			);
 			path = FisherHall;
 			sourceTree = "<group>";
@@ -402,7 +402,6 @@
 				8C71230F1DD834B300074A50 /* ShowBulletinView.xib in Resources */,
 				8CF605A81DCBCBF500BC2E50 /* LaunchScreen.storyboard in Resources */,
 				8CF605A51DCBCBF500BC2E50 /* Assets.xcassets in Resources */,
-				8C7123111DD8393800074A50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +468,7 @@
 				8C7123141DD83D5100074A50 /* Coordinator.swift in Sources */,
 				8C7122ED1DD7CCA700074A50 /* BulletinEndpoint.swift in Sources */,
 				8C7123071DD7E80800074A50 /* AppCoordinator.swift in Sources */,
+				8C2A947F1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift in Sources */,
 				8C7123051DD7E51400074A50 /* LatestBulletinCoordinator.swift in Sources */,
 				8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */,
 			);

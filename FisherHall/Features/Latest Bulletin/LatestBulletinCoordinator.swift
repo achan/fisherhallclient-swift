@@ -2,10 +2,12 @@ import Foundation
 import UIKit
 
 class LatestBulletinCoordinator: Coordinator {
-	private let controller: UIViewController
+	private let controller: UITabBarController
+	private let delegate: LatestBulletinCoordinatorDelegate
 
-	init(withNavigationController controller: UIViewController) {
+	init(withTabBarController controller: UITabBarController, delegate: LatestBulletinCoordinatorDelegate = NoOpLatestBulletinCoordinatorDelegate()) {
 		self.controller = controller
+		self.delegate = delegate
 	}
 
 	public func start() {
@@ -17,9 +19,13 @@ class LatestBulletinCoordinator: Coordinator {
 					let bulletin = BulletinViewModel.fromResource(resource: bulletinResource)
 					else { return }
 
-				weakSelf
-					.controller
-					.present(ShowBulletinViewController(withBulletin: bulletin), animated: true)
+				weakSelf.delegate
+					.didCreateViewController(ShowBulletinViewController(withBulletin: bulletin))
 			}
+	}
+}
+
+private struct NoOpLatestBulletinCoordinatorDelegate: LatestBulletinCoordinatorDelegate {
+	func didCreateViewController(_ controller: ShowBulletinViewController) {
 	}
 }
