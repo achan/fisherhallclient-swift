@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C2A947F1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */; };
 		8C2F696A1DD3077B00795D88 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8C30A47F1DDAB37000DF6103 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A47E1DDAB37000DF6103 /* R.generated.swift */; };
 		8C30A4831DDAB8D900DF6103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C30A4821DDAB8D900DF6103 /* Localizable.strings */; };
@@ -77,7 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestBulletinCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		8C30A47E1DDAB37000DF6103 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8C30A4821DDAB8D900DF6103 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpointSpec.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 			children = (
 				8C7123081DD7ED3400074A50 /* BulletinViewModel.swift */,
 				8C7123041DD7E51400074A50 /* LatestBulletinCoordinator.swift */,
-				8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */,
 				8C71230E1DD834B300074A50 /* ShowBulletinView.xib */,
 				8CF6059F1DCBCBF500BC2E50 /* ShowBulletinViewController.swift */,
 			);
@@ -285,9 +282,9 @@
 				8CF6059D1DCBCBF500BC2E50 /* AppDelegate.swift */,
 				8CF605A41DCBCBF500BC2E50 /* Assets.xcassets */,
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
+				8C30A4821DDAB8D900DF6103 /* Localizable.strings */,
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
-				8C30A4821DDAB8D900DF6103 /* Localizable.strings */,
 				8C30A47E1DDAB37000DF6103 /* R.generated.swift */,
 			);
 			path = FisherHall;
@@ -490,7 +487,6 @@
 				8C7123141DD83D5100074A50 /* Coordinator.swift in Sources */,
 				8C7122ED1DD7CCA700074A50 /* BulletinEndpoint.swift in Sources */,
 				8C7123071DD7E80800074A50 /* AppCoordinator.swift in Sources */,
-				8C2A947F1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift in Sources */,
 				8C7123051DD7E51400074A50 /* LatestBulletinCoordinator.swift in Sources */,
 				8C7122F41DD7CCB100074A50 /* GroupResource.swift in Sources */,
 			);

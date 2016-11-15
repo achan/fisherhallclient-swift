@@ -1,35 +1,36 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: Coordinator, LatestBulletinCoordinatorDelegate {
-	private let tabBarController: UITabBarController
+class AppCoordinator: Coordinator {
+	fileprivate let tabBarController: UITabBarController
+	fileprivate let delegate: AppCoordinatorDelegate
 	private var childCoordinators: [Coordinator] = []
-	private var delegate: AppCoordinatorDelegate?
 
-	init(delegate: AppCoordinatorDelegate? = nil) {
+	init(delegate: AppCoordinatorDelegate) {
 		tabBarController = UITabBarController()
 		self.delegate = delegate
 	}
 
 	public func start() {
-		let latestBulletinCoordinator =
-			LatestBulletinCoordinator(withTabBarController: tabBarController, delegate: self)
+		let latestBulletinCoordinator = LatestBulletinCoordinator(delegate: self)
 		childCoordinators.append(latestBulletinCoordinator)
 
 		latestBulletinCoordinator.start()
 	}
+}
 
+extension AppCoordinator: LatestBulletinCoordinatorDelegate {
 	func didCreateViewController(_ controller: ShowBulletinViewController) {
 		let bulletinBarItem = UITabBarItem(
 			title: R.string.localizable.tabBarItemBulletin(),
-			image: nil,
-			selectedImage: nil
+			image: R.image.bulletin(),
+			selectedImage: R.image.bulletinSelected()
 		)
 
 		controller.tabBarItem = bulletinBarItem
 		tabBarController.setViewControllers([controller], animated: true)
 
-		delegate?.didCreateRootViewController(tabBarController)
+		delegate.didCreateRootViewController(tabBarController)
 	}
 }
 

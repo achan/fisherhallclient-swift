@@ -4,13 +4,9 @@ import BrightFutures
 import Spine
 
 class LatestBulletinCoordinator: Coordinator {
-	private let controller: UITabBarController
 	private let delegate: LatestBulletinCoordinatorDelegate
 
-	init(
-		withTabBarController controller: UITabBarController,
-		delegate: LatestBulletinCoordinatorDelegate) {
-		self.controller = controller
+	init(delegate: LatestBulletinCoordinatorDelegate) {
 		self.delegate = delegate
 	}
 
@@ -31,4 +27,8 @@ class LatestBulletinCoordinator: Coordinator {
 
 		return Future(error: SpineError.resourceNotFound)
 	}
+}
+
+protocol LatestBulletinCoordinatorDelegate {
+	func didCreateViewController(_ controller: ShowBulletinViewController)
 }
