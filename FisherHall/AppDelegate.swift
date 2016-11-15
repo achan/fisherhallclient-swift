@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  FisherHallClient
-//
-//  Created by Amos Chan on 2016-11-03.
-//  Copyright © 2016 Amos Chan. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

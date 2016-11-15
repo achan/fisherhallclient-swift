@@ -20,7 +20,12 @@ class AppCoordinator: Coordinator, LatestBulletinCoordinatorDelegate {
 	}
 
 	func didCreateViewController(_ controller: ShowBulletinViewController) {
-		let bulletinBarItem = UITabBarItem(title: "Bulletin", image: nil, selectedImage: nil)
+		let bulletinBarItem = UITabBarItem(
+			title: R.string.localizable.tabBarItemBulletin(),
+			image: nil,
+			selectedImage: nil
+		)
+
 		controller.tabBarItem = bulletinBarItem
 		tabBarController.setViewControllers([controller], animated: true)
 

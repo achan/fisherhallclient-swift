@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8C2A947F1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */; };
 		8C2F696A1DD3077B00795D88 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
+		8C30A47F1DDAB37000DF6103 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A47E1DDAB37000DF6103 /* R.generated.swift */; };
+		8C30A4831DDAB8D900DF6103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C30A4821DDAB8D900DF6103 /* Localizable.strings */; };
 		8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
 		8C5D872B1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */; };
@@ -76,6 +78,8 @@
 
 /* Begin PBXFileReference section */
 		8C2A947E1DDA4D480030ADDA /* LatestBulletinCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestBulletinCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		8C30A47E1DDAB37000DF6103 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		8C30A4821DDAB8D900DF6103 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpointSpec.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEndpointSpec.swift; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 				8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */,
 				8CF605A91DCBCBF500BC2E50 /* Info.plist */,
 				8CF605A61DCBCBF500BC2E50 /* LaunchScreen.storyboard */,
+				8C30A4821DDAB8D900DF6103 /* Localizable.strings */,
+				8C30A47E1DDAB37000DF6103 /* R.generated.swift */,
 			);
 			path = FisherHall;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHall" */;
 			buildPhases = (
+				8C30A47D1DDAB14900DF6103 /* ShellScript */,
 				8CF605961DCBCBF500BC2E50 /* Sources */,
 				8CF605971DCBCBF500BC2E50 /* Frameworks */,
 				8CF605981DCBCBF500BC2E50 /* Resources */,
@@ -400,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C71230F1DD834B300074A50 /* ShowBulletinView.xib in Resources */,
+				8C30A4831DDAB8D900DF6103 /* Localizable.strings in Resources */,
 				8CF605A81DCBCBF500BC2E50 /* LaunchScreen.storyboard in Resources */,
 				8CF605A51DCBCBF500BC2E50 /* Assets.xcassets in Resources */,
 			);
@@ -415,6 +423,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8C30A47D1DDAB14900DF6103 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"/usr/local/bin/rswift\" \"$SRCROOT/FisherHall\"";
+		};
 		8CF605C61DCBCE5C00BC2E50 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +484,7 @@
 				8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */,
 				8C7122FF1DD7E29100074A50 /* SermonEndpoint.swift in Sources */,
 				8C7123011DD7E29800074A50 /* SermonResource.swift in Sources */,
+				8C30A47F1DDAB37000DF6103 /* R.generated.swift in Sources */,
 				8CF6059E1DCBCBF500BC2E50 /* AppDelegate.swift in Sources */,
 				8C7123091DD7ED3400074A50 /* BulletinViewModel.swift in Sources */,
 				8C7123141DD83D5100074A50 /* Coordinator.swift in Sources */,
@@ -604,6 +626,7 @@
 		8CF605B81DCBCBF500BC2E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C974G5D47X;
@@ -622,6 +645,7 @@
 		8CF605B91DCBCBF500BC2E50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C974G5D47X;

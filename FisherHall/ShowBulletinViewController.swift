@@ -13,7 +13,7 @@ class ShowBulletinViewController: UIViewController {
 	}
 
 	required init(withBulletinFuture bulletinFuture: Future<BulletinViewModel, SpineError>) {
-		super.init(nibName: "ShowBulletinView", bundle: Bundle.main)
+		super.init(nibName: R.nib.showBulletinView.name, bundle: Bundle.main)
 
 		bulletinFuture.onSuccess { [weak self] bulletin in
 			guard let weakSelf = self else { return }
