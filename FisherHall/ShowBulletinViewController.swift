@@ -1,7 +1,9 @@
 import UIKit
+import BrightFutures
+import Spine
 
 class ShowBulletinViewController: UIViewController {
-	private let bulletin: BulletinViewModel
+	private var bulletin: BulletinViewModel?
 
 	@IBOutlet weak var nameLabel: UILabel!
 
@@ -10,12 +12,20 @@ class ShowBulletinViewController: UIViewController {
 		abort()
 	}
 
-	required init(withBulletin bulletin: BulletinViewModel) {
-		self.bulletin = bulletin
+	required init(withBulletinFuture bulletinFuture: Future<BulletinViewModel, SpineError>) {
 		super.init(nibName: "ShowBulletinView", bundle: Bundle.main)
+
+		bulletinFuture.onSuccess { [weak self] bulletin in
+			guard let weakSelf = self else { return }
+
+			weakSelf.updateBulletin(bulletin)
+		}
 	}
 
-	override func viewDidLoad() {
+	func updateBulletin(_ bulletin: BulletinViewModel) {
+		self.bulletin = bulletin
+
+		guard let bulletin = self.bulletin else { return }
 		nameLabel?.text = bulletin.name
 	}
 }

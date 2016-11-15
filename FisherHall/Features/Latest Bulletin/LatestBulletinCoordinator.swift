@@ -1,31 +1,34 @@
 import Foundation
 import UIKit
+import BrightFutures
+import Spine
 
 class LatestBulletinCoordinator: Coordinator {
 	private let controller: UITabBarController
 	private let delegate: LatestBulletinCoordinatorDelegate
 
-	init(withTabBarController controller: UITabBarController, delegate: LatestBulletinCoordinatorDelegate = NoOpLatestBulletinCoordinatorDelegate()) {
+	init(
+		withTabBarController controller: UITabBarController,
+		delegate: LatestBulletinCoordinatorDelegate) {
 		self.controller = controller
 		self.delegate = delegate
 	}
 
 	public func start() {
-		BulletinEndpoint(withClient: FisherHallClient())
+		let bulletinFuture = BulletinEndpoint(withClient: FisherHallClient())
 			.getLatestBulletin()
-			.onSuccess { [weak self] bulletinResource, _, _ in
-				guard
-					let weakSelf = self,
-					let bulletin = BulletinViewModel.fromResource(resource: bulletinResource)
-					else { return }
+			.flatMap { response in self.buildViewModelFuture(fromResource: response.resource) }
 
-				weakSelf.delegate
-					.didCreateViewController(ShowBulletinViewController(withBulletin: bulletin))
-			}
+		let showBulletinController = ShowBulletinViewController(withBulletinFuture: bulletinFuture)
+		self.delegate.didCreateViewController(showBulletinController)
 	}
-}
 
-private struct NoOpLatestBulletinCoordinatorDelegate: LatestBulletinCoordinatorDelegate {
-	func didCreateViewController(_ controller: ShowBulletinViewController) {
+	private func buildViewModelFuture(fromResource resource: BulletinResource)
+		-> Future<BulletinViewModel, SpineError> {
+		if let bulletinViewModel = BulletinViewModel.fromResource(resource: resource) {
+			return Future(value: bulletinViewModel)
+		}
+
+		return Future(error: SpineError.resourceNotFound)
 	}
 }
