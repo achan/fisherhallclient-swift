@@ -1,6 +1,7 @@
 import Foundation
 import Spine
 import BrightFutures
+import RxSwift
 
 class BulletinEndpoint {
 	private static let baseUrl = "https://mcac.church/api/v1/bulletins"
@@ -22,4 +23,6 @@ class BulletinEndpoint {
 		query.include("announcements")
 		return client.spine.findOne(query)
 	}
+
+
 }

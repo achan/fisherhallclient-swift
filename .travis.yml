@@ -2,6 +2,9 @@ language: objective-c
 osx_image: xcode8
 env:
   - PLATFORM="ios" SCHEME="FisherHallTests" DESTINATION="platform=iOS Simulator,name=iPhone SE,OS=10.0" SDK="iphonesimulator10.0"
+before_install:
+  - brew update
+  - brew install rswift
 before_script:
   - carthage bootstrap --platform $PLATFORM --no-use-binaries
   - xcodebuild -project FisherHall.xcodeproj -list

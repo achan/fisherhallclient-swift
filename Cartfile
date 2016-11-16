@@ -1,3 +1,5 @@
 github "wvteijlingen/Spine" "master"
 github "Quick/Quick"
 github "Quick/Nimble"
+github "ReactiveX/RxSwift" ~> 3.0
+github "mac-cain13/R.swift.Library"
