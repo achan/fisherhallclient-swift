@@ -1,3 +1,4 @@
 github "wvteijlingen/Spine" "master"
 github "Quick/Quick"
 github "Quick/Nimble"
+github "ReactiveX/RxSwift" ~> 3.0

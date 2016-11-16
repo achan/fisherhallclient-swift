@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
-import BrightFutures
-import Spine
+import RxSwift
 
 class LatestBulletinCoordinator: Coordinator {
 	private let delegate: LatestBulletinCoordinatorDelegate
@@ -11,21 +10,29 @@ class LatestBulletinCoordinator: Coordinator {
 	}
 
 	public func start() {
-		let bulletinFuture = BulletinEndpoint(withClient: FisherHallClient())
-			.getLatestBulletin()
-			.flatMap { response in self.buildViewModelFuture(fromResource: response.resource) }
+		let bulletinObservable =
+			RxBulletinEndpoint(withClient: FisherHallClient())
+				.getLatestBulletin()
+				.flatMap { response in self.createObservable(fromResource: response) }
 
-		let showBulletinController = ShowBulletinViewController(withBulletinFuture: bulletinFuture)
+		let showBulletinController =
+			ShowBulletinViewController(withBulletinObservable: bulletinObservable)
+
 		self.delegate.didCreateViewController(showBulletinController)
 	}
 
-	private func buildViewModelFuture(fromResource resource: BulletinResource)
-		-> Future<BulletinViewModel, SpineError> {
-		if let bulletinViewModel = BulletinViewModel.fromResource(resource: resource) {
-			return Future(value: bulletinViewModel)
-		}
+	private func createObservable(fromResource resource: BulletinResource)
+		-> Observable<BulletinViewModel> {
+		return Observable.create { observer in
+			if let bulletin = BulletinViewModel.fromResource(resource) {
+				observer.onNext(bulletin)
+			} else {
+				observer.onError(AppError.resourceToViewModelConversionError)
+			}
 
-		return Future(error: SpineError.resourceNotFound)
+			observer.onCompleted()
+			return Disposables.create()
+		}
 	}
 }
 

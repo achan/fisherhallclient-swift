@@ -13,7 +13,7 @@ class BulletinViewModel {
 		self.serviceOrder = serviceOrder ?? ""
 	}
 
-	public static func fromResource(resource: BulletinResource) -> BulletinViewModel? {
+	public static func fromResource(_ resource: BulletinResource) -> BulletinViewModel? {
 		guard let name = resource.name, let publishedAt = resource.publishedAt else {
 			return nil
 		}

@@ -1,6 +1,6 @@
 import Foundation
 import Spine
-import BrightFutures	
+import BrightFutures
 
 class AnnouncementEndpoint {
 	private static let baseUrl = "https://mcac.church/api/v1/announcements"

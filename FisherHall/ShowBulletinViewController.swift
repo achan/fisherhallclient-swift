@@ -1,32 +1,27 @@
 import UIKit
 import BrightFutures
 import Spine
+import RxSwift
 
 class ShowBulletinViewController: UIViewController {
 	@IBOutlet weak var nameLabel: UILabel!
 
-	private var bulletin: BulletinViewModel? {
-		didSet {
-			if let bulletin = self.bulletin {
-				self.updateUI(withBulletin: bulletin)
-			}
-		}
-	}
+	private let disposeBag = DisposeBag()
 
 	required init(coder aDecoder: NSCoder) {
 		print("Loading from NIB not supported.")
 		abort()
 	}
 
-	required init(withBulletinFuture bulletinFuture: Future<BulletinViewModel, SpineError>) {
+	required init(withBulletinObservable bulletinObserver: Observable<BulletinViewModel>) {
 		super.init(nibName: R.nib.showBulletinView.name, bundle: Bundle.main)
 
-		bulletinFuture.onSuccess { [weak self] bulletin in
-			self?.bulletin = bulletin
-		}
+		bulletinObserver
+			.subscribe(onNext: { self.updateUI(withBulletin: $0) })
+			.addDisposableTo(disposeBag)
 	}
 
-	func updateUI(withBulletin bulletin: BulletinViewModel) {
+	private func updateUI(withBulletin bulletin: BulletinViewModel) {
 		nameLabel?.text = bulletin.name
 	}
 }

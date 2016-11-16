@@ -1,6 +1,7 @@
 github "Quick/Nimble" "v5.1.1"
 github "Quick/Quick" "v0.10.0"
 github "antitypical/Result" "3.0.0"
+github "ReactiveX/RxSwift" "3.0.1"
 github "SwiftyJSON/SwiftyJSON" "3.1.2"
 github "Thomvis/BrightFutures" "v5.1.0"
 github "wvteijlingen/Spine" "12b71bb45584efc91ce281e01e0e7e86d5cbdc49"
