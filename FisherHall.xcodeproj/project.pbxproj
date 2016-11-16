@@ -12,6 +12,9 @@
 		8C2F696A1DD3077B00795D88 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF605BE1DCBCE4A00BC2E50 /* BrightFutures.framework */; };
 		8C30A47F1DDAB37000DF6103 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A47E1DDAB37000DF6103 /* R.generated.swift */; };
 		8C30A4831DDAB8D900DF6103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C30A4821DDAB8D900DF6103 /* Localizable.strings */; };
+		8C3439E61DDC163D00948DFD /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3439E51DDC163D00948DFD /* Rswift.framework */; };
+		8C3439FA1DDC191500948DFD /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3439E51DDC163D00948DFD /* Rswift.framework */; };
+		8C3439FB1DDC191500948DFD /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3439E51DDC163D00948DFD /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C5D6E4F1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */; };
 		8C5D87281DCC2E8C00DAB8D3 /* FisherHallClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */; };
 		8C5D872B1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */; };
@@ -34,7 +37,6 @@
 		8CD1941C1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1941B1DD0C76500AFEDE2 /* BulletinEndpointSpec.swift */; };
 		8CEF586F1DDBE33900F551CC /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586C1DDBE33900F551CC /* RxBlocking.framework */; };
 		8CEF58701DDBE33900F551CC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586D1DDBE33900F551CC /* RxCocoa.framework */; };
-		8CEF58711DDBE33900F551CC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586E1DDBE33900F551CC /* RxSwift.framework */; };
 		8CEF58721DDBE34200F551CC /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586C1DDBE33900F551CC /* RxBlocking.framework */; };
 		8CEF58731DDBE34200F551CC /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586C1DDBE33900F551CC /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CEF58741DDBE34200F551CC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEF586D1DDBE33900F551CC /* RxCocoa.framework */; };
@@ -79,6 +81,7 @@
 				8CEF58751DDBE34200F551CC /* RxCocoa.framework in Embed Frameworks */,
 				8CF605E11DCBFB5300BC2E50 /* BrightFutures.framework in Embed Frameworks */,
 				8CEF58771DDBE34200F551CC /* RxSwift.framework in Embed Frameworks */,
+				8C3439FB1DDC191500948DFD /* Rswift.framework in Embed Frameworks */,
 				8CEF58731DDBE34200F551CC /* RxBlocking.framework in Embed Frameworks */,
 				8CF605E71DCBFB5300BC2E50 /* SwiftyJSON.framework in Embed Frameworks */,
 				8CF605E31DCBFB5300BC2E50 /* Result.framework in Embed Frameworks */,
@@ -94,6 +97,7 @@
 		8C00A5721DDBFEF0001727A0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8C30A47E1DDAB37000DF6103 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8C30A4821DDAB8D900DF6103 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8C3439E51DDC163D00948DFD /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		8C5D6E4E1DD2D8F40000DEE7 /* AnnouncementEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementEndpointSpec.swift; sourceTree = "<group>"; };
 		8C5D87271DCC2E8C00DAB8D3 /* FisherHallClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisherHallClient.swift; sourceTree = "<group>"; };
 		8C5D872A1DCC3A5A00DAB8D3 /* GroupEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEndpointSpec.swift; sourceTree = "<group>"; };
@@ -137,11 +141,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3439E61DDC163D00948DFD /* Rswift.framework in Frameworks */,
 				8CEF58761DDBE34200F551CC /* RxSwift.framework in Frameworks */,
 				8CEF58741DDBE34200F551CC /* RxCocoa.framework in Frameworks */,
 				8CEF586F1DDBE33900F551CC /* RxBlocking.framework in Frameworks */,
 				8CEF58701DDBE33900F551CC /* RxCocoa.framework in Frameworks */,
-				8CEF58711DDBE33900F551CC /* RxSwift.framework in Frameworks */,
+				8C3439FA1DDC191500948DFD /* Rswift.framework in Frameworks */,
 				8CEF58721DDBE34200F551CC /* RxBlocking.framework in Frameworks */,
 				8C2F696A1DD3077B00795D88 /* BrightFutures.framework in Frameworks */,
 				8CF605C41DCBCE4A00BC2E50 /* Spine.framework in Frameworks */,
@@ -339,6 +344,7 @@
 		8CF605BD1DCBCE4A00BC2E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C3439E51DDC163D00948DFD /* Rswift.framework */,
 				8CEF586C1DDBE33900F551CC /* RxBlocking.framework */,
 				8CEF586D1DDBE33900F551CC /* RxCocoa.framework */,
 				8CEF586E1DDBE33900F551CC /* RxSwift.framework */,
@@ -359,7 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF605B71DCBCBF500BC2E50 /* Build configuration list for PBXNativeTarget "FisherHall" */;
 			buildPhases = (
-				8C30A47D1DDAB14900DF6103 /* ShellScript */,
+				8C30A47D1DDAB14900DF6103 /* Generate R.generated.swift */,
 				8CF605961DCBCBF500BC2E50 /* Sources */,
 				8CF605971DCBCBF500BC2E50 /* Frameworks */,
 				8CF605981DCBCBF500BC2E50 /* Resources */,
@@ -458,13 +464,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8C30A47D1DDAB14900DF6103 /* ShellScript */ = {
+		8C30A47D1DDAB14900DF6103 /* Generate R.generated.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Generate R.generated.swift";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,7 +671,6 @@
 		8CF605B81DCBCBF500BC2E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C974G5D47X;
@@ -683,7 +689,6 @@
 		8CF605B91DCBCBF500BC2E50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C974G5D47X;

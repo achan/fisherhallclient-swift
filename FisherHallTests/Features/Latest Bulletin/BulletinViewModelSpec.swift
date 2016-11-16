@@ -26,7 +26,7 @@ class BulletinViewModelSpec: QuickSpec {
 				var subject: BulletinViewModel!
 
 				beforeEach {
-					subject = BulletinViewModel.fromResource(resource: BulletinResource())
+					subject = BulletinViewModel.fromResource(BulletinResource())
 				}
 
 				it("returns nil") {
@@ -43,7 +43,7 @@ class BulletinViewModelSpec: QuickSpec {
 					resource.name = "Bulletin Name"
 					resource.publishedAt = NSDate(timeIntervalSince1970: 1478999629)
 
-					subject = BulletinViewModel.fromResource(resource: resource)
+					subject = BulletinViewModel.fromResource(resource)
 				}
 
 				it("returns a view model with the minimum fields") {
@@ -65,7 +65,7 @@ class BulletinViewModelSpec: QuickSpec {
 					resource.bannerUrl = NSURL(string: "http://wwww.example.com/banner.png")
 					resource.serviceOrder = "My service order"
 
-					subject = BulletinViewModel.fromResource(resource: resource)
+					subject = BulletinViewModel.fromResource(resource)
 				}
 
 				it("returns a view model with all fields") {
